@@ -2,10 +2,10 @@
   "name": "bodega",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "www.js",
   "type": "module",
   "scripts": {
-    "server": "nodemon server/web/www.js",
+    "server": "nodemon server/src/web/www.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },

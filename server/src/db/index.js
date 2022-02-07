@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
-import config from "../config";
+import config from "../config/index.js";
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(config.MONGO_URI, {
+    const conn = await mongoose.connect(config.mongo_uri, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
     });
